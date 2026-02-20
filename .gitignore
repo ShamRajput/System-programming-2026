@@ -44,3 +44,8 @@
 .vscode
 .vscode/settings.json
 .gitignore
+CMakeUserPresets.json
+conan.lock
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json

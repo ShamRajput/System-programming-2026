@@ -20,6 +20,8 @@ if [[ "$1" == "clean" ]]; then
     rm -rf $BUILD_DIR $INSTALL_DIR
 fi
 
+conan install . --output-folder=$BUILD_DIR --build=missing -s build_type=Release
+
 # 2. Configure the system
 # We use -DCMAKE_EXPORT_COMPILE_COMMANDS=ON for IDE support
 cmake -G "$GENERATOR" \
